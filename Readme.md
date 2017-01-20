@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Oleg Mikhailov](https://up.htmlacademy.ru/htmlcss/16/user/172983).
-* Наставник: Алексей Дождев.
+* Наставник: [Алексей Дождев]
+(https://htmlacademy.ru/profile/id71418).
 
 ---
 
