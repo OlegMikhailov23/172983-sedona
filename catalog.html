@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>SEDONA:catalog</title>
+  </head>
+  <body>
+    <header class="page-header">
+     <div class="container">
+        <div class="header-logo">
+        <img src="http://placehold.it/150x100" alt="city of Sedona">
+        </div>
+            <nav class="page-navigation">
+              <ul>
+               <li>
+                 <a href="#">Информация</a>
+               </li>
+               <li>
+                 <a href="#">Фото и видео</a>
+               </li>
+               <li>
+                 <a href="#">Карта штата</a>
+               </li>
+               <li>
+                 <a href="#">Гостиницы</a>
+               </li>
+             </ul>
+          </nav>
+      </div>
+    </header>
+    <main>
+    <div class="filters">
+        <form action="#" method="post" oninput="from.value=min-price.value">
+         <fieldset class="filters-checkbox">
+          <legend>Инфраструктура:</legend>
+          <label for="pool">Бассейн</label>
+          <input type="checkbox" name="pool" id="pool">
+          <label for="parking">Парковка</label>
+          <input type="checkbox" name="parking" id="parking">
+          <label for="WiFi">Wi-Fi</label>
+          <input type="checkbox" name="WiFi" id="WiFi">
+        </fieldset>
+        <fieldset class="filters-checkbox">
+          <legend>Тип жилья:</legend>
+          <label for="hotel">Гостиница</label>
+          <input type="checkbox" name="hotel" id="hotel">
+          <label for="motel">Мотель</label>
+          <input type="checkbox" name="motel" id="motel">
+          <label for="apartment">Апартаменты</label>
+          <input type="checkbox" name="apartment" id="apartment">
+        </fieldset>
+      <fieldset class="filters-range">
+        <legend>Стоимость в утки (Р):</legend>
+        
+        <div class="filters-output-min">
+          <label for="from">От</label>
+          <output name="from"></output>
+        </div>
+        <div class="filters-output-max">
+           <label for="to">До</label>
+          <output name="to"></output>
+        </div>
+        <!-- Просто не врубаюсь, как этот ползунок сделать, need help)))
+        <div class="filters-range-min">
+          <input type="range" id="min-price" name="min-price" min="1" max="2999">
+        </div>
+        <div class="filters-range-max">
+          <input type="range" id="max-price" name="max-price" min="1" max="3000">
+        </div>-->
+      </fieldset>
+      </div>
+      <div class="result">
+        <div class="result-heder">
+         <h2>Найдено:3</h2>
+           <div class="result-header-sort">
+             <b>Сортировка:</b>
+             <a href="#">по цене</a>
+             <a href="#">по типу</a>
+             <a href="#">по рейтингу</a>
+           </div>
+           <div class="arrow">
+             <a href="#" class="arrow-up"><</a>
+             <a href="#" class="arrow-down">></a>
+           </div>
+        </div>
+        <div class="result-find">
+           <div class="result-find-img">
+             <img src="http://placehold.it/150x100" alt="Amara-resort">
+           </div>
+           <div class="result-find-inf">
+             <h2>Amara resort & Spa</h2>
+               <div class="result-find-inf-detail">
+                 <b>Гостиница</b>
+                 <a href="#" class="detail-btn">Подробнее</a>
+               </div>
+               <div class="result-find-inf-book">
+                 <b>От 3500 Р.</b>
+                 <a href="#" class="detail-btn">Забронировать</a>
+               </div>
+               <div class="result-find-raiting">
+                 <div class="result-find-raiting-stars">
+                   <i></i>
+                   <i></i>
+                   <i></i>
+                   <i></i>
+                 </div>
+                 <div class="result-find-raiting-count">
+                 <p>Райтинг=8,5</p>
+                 </div>
+               </div>
+              </div> 
+           </div>
+           <div class="result-find">
+           <div class="result-find-img">
+             <img src="http://placehold.it/150x100" alt="Amara-resort">
+           </div>
+           <div class="result-find-inf">
+             <h2>Desert quail inn</h2>
+               <div class="result-find-inf-detail">
+                 <b>Мотель</b>
+                 <a href="#" class="detail-btn">Подробнее</a>
+               </div>
+               <div class="result-find-inf-book">
+                 <b>От 2000 Р.</b>
+                 <a href="#" class="detail-btn">Забронировать</a>
+               </div>
+               <div class="result-find-raiting">
+                 <div class="result-find-raiting-stars">
+                   <i></i>
+                   <i></i>
+                   <i></i>
+                   <i></i>
+                 </div>
+                 <div class="result-find-raiting-count">
+                 <p>Райтинг=8,9</p>
+                 </div>
+               </div>
+              </div> 
+           </div>
+           <div class="result-find">
+           <div class="result-find-img">
+             <img src="http://placehold.it/150x100" alt="Amara-resort">
+           </div>
+           <div class="result-find-inf">
+             <h2>Villas at poco diablo</h2>
+               <div class="result-find-inf-detail">
+                 <b>Апартаменты</b>
+                 <a href="#" class="detail-btn">Подробнее</a>
+               </div>
+               <div class="result-find-inf-book">
+                 <b>От 4000 Р.</b>
+                 <a href="#" class="detail-btn">Забронировать</a>
+               </div>
+               <div class="result-find-raiting">
+                 <div class="result-find-raiting-stars">
+                   <i></i>
+                   <i></i>
+                   <i></i>
+                   <i></i>
+                 </div>
+                 <div class="result-find-raiting-count">
+                 <p>Райтинг=9,2</p>
+                 </div>
+               </div>
+            </div> 
+           </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+      <div class="hash-tag">
+        <span class="visit">#Visitsedona</span>
+      </div>
+      <div class="social">
+        <div class="social Twitter">
+          <a href="#">Twitter</a>
+        </div>
+        <div class="social FB">
+          <a href="#">Facebook</a>
+        </div>
+        <div class="social Youtube">
+          <a href="#">Youtube</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <span class="copyright-sign">Website by</span>
+        <a class="logo-htmlacademy" href="#">logo-htmlacademy</a>
+      </div>
+    </footer>
+  </body>
+</html>
