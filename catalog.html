@@ -49,24 +49,19 @@
           <label for="apartment">Апартаменты</label>
           <input type="checkbox" name="apartment" id="apartment">
         </fieldset>
-      <fieldset class="filters-range">
-        <legend>Стоимость в утки (Р):</legend>
-        
-        <div class="filters-output-min">
-          <label for="from">От</label>
-          <output name="from"></output>
-        </div>
-        <div class="filters-output-max">
-           <label for="to">До</label>
-          <output name="to"></output>
-        </div>
-        <!-- Просто не врубаюсь, как этот ползунок сделать, need help)))
-        <div class="filters-range-min">
-          <input type="range" id="min-price" name="min-price" min="1" max="2999">
-        </div>
-        <div class="filters-range-max">
-          <input type="range" id="max-price" name="max-price" min="1" max="3000">
-        </div>-->
+      <fieldset class="range">
+        <legend>Стоимость в cутки (Р):</legend>
+            <div class="range-filter">
+            <div class="price-controls">
+                от <input class="min-price" type="text" value="0">
+                до <input class="max-price" type="text" value="3000">
+            </div>
+            <div class="range-controls">
+                <div class="scale"><div style="margin-left:50px;width:100px;" class="bar"></div></div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+            </div>
+            </div>
       </fieldset>
       </div>
       <div class="result">
