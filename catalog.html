@@ -7,30 +7,30 @@
   <body>
     <header class="page-header">
      <div class="container">
-        <div class="header-logo">
-        <img src="http://placehold.it/150x100" alt="city of Sedona">
-        </div>
-            <nav class="page-navigation">
-              <ul class="main-navigation-board">
-               <li>
+            <nav>
+              <ul class="page-header_list">
+               <li class="page-header_list-item">
                  <a href="#">Информация</a>
                </li>
-               <li>
+               <li class="page-header_list-item">
                  <a href="#">Фото и видео</a>
                </li>
-               <li>
+               <li class="page-header_list-item_logo"><a href=""><img src="http://placehold.it/150x100" alt="city of Sedona"></a></li>
+               <li class="page-header_list-item">
                  <a href="#">Карта штата</a>
                </li>
-               <li>
+               <li class="page-header_list-item">
                  <a href="#">Гостиницы</a>
                </li>
              </ul>
           </nav>
       </div>
     </header>
+    </header>
     <main class="container">
+    <section>
     <div class="filters">
-        <form action="#" method="post" oninput="from.value=min-price.value">
+        <form action="#" method="post">
          <fieldset class="filters-checkbox">
           <legend>Инфраструктура:</legend>
           <label for="pool">Бассейн</label>
@@ -49,14 +49,14 @@
           <label for="apartment">Апартаменты</label>
           <input type="checkbox" name="apartment" id="apartment">
         </fieldset>
-      <fieldset class="range">
+      <fieldset class="filters-range">
         <legend>Стоимость в cутки (Р):</legend>
-            <div class="range-filter">
-            <div class="price-controls">
+            <div class="filters_range-filter">
+            <div class="filters_range-filter_price-controls">
                 от <input class="min-price" type="text" value="0">
                 до <input class="max-price" type="text" value="3000">
             </div>
-            <div class="range-controls">
+            <div class="filters_range-filter_range-controls">
                 <div class="scale"><div style="margin-left:50px;width:100px;" class="bar"></div></div>
                 <div class="toggle min-toggle"></div>
                 <div class="toggle max-toggle"></div>
@@ -64,121 +64,114 @@
             </div>
       </fieldset>
       </div>
-      <div class="result">
+      </section>
+      <section class="container">
+       <section>
         <div class="result-heder">
-         <h2>Найдено:3</h2>
-           <div class="result-header-sort">
-             <b>Сортировка:</b>
-             <a href="#">по цене</a>
-             <a href="#">по типу</a>
-             <a href="#">по рейтингу</a>
-           </div>
-           <div class="arrow">
-             <a href="#" class="arrow-up"><</a>
-             <a href="#" class="arrow-down">></a>
+         <h2 class="result-heder-text_title">Найдено:3</h2>
+           <p class="result-header-text_sort">Сортировка:</p>
+            <ul class="result-header_sort-list">
+              <li  class="result-header_sort-list_item"><a href="#">по цене</a></li>
+              <li class="result-header_sort-list_item"><a href="#">по типу</a></li>
+              <li class="result-header_sort-list_item"><a href="#">по рейтингу</a></li>
+            </ul>
+           <div class="result-heder_arrow">
+             <li class="result-heder_arrow-up"><a href="#"><</a></li>
+              <li class="result-heder_arrow-down"><a href="#" >></a></li>
            </div>
         </div>
-        <div class="result-find">
-           <div class="result-find-img">
+        </section>
+        
+        <section class="result-find">
+           <div class="result-find_pic">
              <img src="http://placehold.it/150x100" alt="Amara-resort">
            </div>
-           <div class="result-find-inf">
-             <h2>Amara resort & Spa</h2>
-               <div class="result-find-inf-detail">
-                 <b>Гостиница</b>
-                 <a href="#" class="detail-btn">Подробнее</a>
-               </div>
-               <div class="result-find-inf-book">
-                 <b>От 3500 Р.</b>
-                 <a href="#" class="detail-btn">Забронировать</a>
-               </div>
-               <div class="result-find-raiting">
-                 <div class="result-find-raiting-stars">
-                   <i></i>
-                   <i></i>
-                   <i></i>
-                   <i></i>
+           <div class="result-find_info">
+             <h2 class="result-find_info-text_title">Amara resort & Spa</h2>
+              <p class="result-find_info-text_subtitle">Гостиница</p>
+              <p class="result-find_info-text_subtitle">От 3500 Р.</p>
+              <ul class="result-find_info_list">
+                <li class="result-find_info_list-link"><a href="">Подробнее</a></li>
+                <li class="result-find_info_list-link"><a href="">Забронировать</a></li>
+              </ul>
+               <div class="result-find_raiting">
+                 <div class="result-find_raiting-4stars">
+                   <img src="" alt="">
                  </div>
-                 <div class="result-find-raiting-count">
-                 <p>Райтинг=8,5</p>
+                 <div class="result-find_raiting-field">
+                 <p class="result-find_raiting-field_subtitle">Райтинг=8,5</p>
                  </div>
                </div>
               </div> 
+           </section>
+          <section class="result-find">
+           <div class="result-find_pic">
+             <img src="http://placehold.it/150x100" alt="Villas at poco diablo">
            </div>
-           <div class="result-find">
-           <div class="result-find-img">
-             <img src="http://placehold.it/150x100" alt="Amara-resort">
-           </div>
-           <div class="result-find-inf">
-             <h2>Desert quail inn</h2>
-               <div class="result-find-inf-detail">
-                 <b>Мотель</b>
-                 <a href="#" class="detail-btn">Подробнее</a>
-               </div>
-               <div class="result-find-inf-book">
-                 <b>От 2000 Р.</b>
-                 <a href="#" class="detail-btn">Забронировать</a>
-               </div>
-               <div class="result-find-raiting">
-                 <div class="result-find-raiting-stars">
-                   <i></i>
-                   <i></i>
-                   <i></i>
-                   <i></i>
+           <div class="result-find_info">
+             <h2 class="result-find_info-text_title">Desert quail inn</h2>
+              <p class="result-find_info-text_subtitle">От 2000 Р.</p>
+              <p class="result-find_info-text_subtitle">Мотель</p>
+              <ul class="result-find_info_list">
+                <li class="result-find_info_list-link"><a href="">Подробнее</a></li>
+                <li class="result-find_info_list-link"><a href="">Забронировать</a></li>
+              </ul>
+               <div class="result-find_raiting">
+                 <div class="result-find_raiting-4stars">
+                   <img src="" alt="">
                  </div>
-                 <div class="result-find-raiting-count">
-                 <p>Райтинг=8,9</p>
+                 <div class="result-find_raiting-field">
+                 <p class="result-find_raiting-field_subtitle">Райтинг=8,9</p>
                  </div>
                </div>
               </div> 
+           </section>
+           <section class="result-find">
+           <div class="result-find_pic">
+             <img src="http://placehold.it/150x100" alt="Villas at poco diablo">
            </div>
-           <div class="result-find">
-           <div class="result-find-img">
-             <img src="http://placehold.it/150x100" alt="Amara-resort">
-           </div>
-           <div class="result-find-inf">
-             <h2>Villas at poco diablo</h2>
-               <div class="result-find-inf-detail">
-                 <b>Апартаменты</b>
-                 <a href="#" class="detail-btn">Подробнее</a>
-               </div>
-               <div class="result-find-inf-book">
-                 <b>От 4000 Р.</b>
-                 <a href="#" class="detail-btn">Забронировать</a>
-               </div>
-               <div class="result-find-raiting">
-                 <div class="result-find-raiting-stars">
-                   <i></i>
-                   <i></i>
-                   <i></i>
-                   <i></i>
+           <div class="result-find_info">
+             <h2 class="result-find_info-text_title">Villas at poco diablo</h2>
+              <p class="result-find_info-text_subtitle">От 4000 Р.</p>
+              <p class="result-find_info-text_subtitle">Апартаменты</p>
+              <ul class="result-find_info_list">
+                <li class="result-find_info_list-link"><a href="">Подробнее</a></li>
+                <li class="result-find_info_list-link"><a href="">Забронировать</a></li>
+              </ul>
+               <div class="result-find_raiting">
+                 <div class="result-find_raiting-4stars">
+                   <img src="" alt="">
                  </div>
-                 <div class="result-find-raiting-count">
-                 <p>Райтинг=9,2</p>
+                 <div class="result-find_raiting-field">
+                 <p class="result-find_raiting-field_subtitle">Райтинг=9,2</p>
                  </div>
                </div>
-            </div> 
-           </div>
-        </div>
+              </div> 
+           </section>
+        </section>
     </main>
     <footer class="page-footer">
-      <div class="hash-tag">
+      <div class="page-footer_hash-tag">
         <span class="visit">#Visitsedona</span>
       </div>
-      <div class="social">
-        <div class="social Twitter">
-          <a href="#">Twitter</a>
-        </div>
-        <div class="social FB">
-          <a href="#">Facebook</a>
-        </div>
-        <div class="social Youtube">
-          <a href="#">Youtube</a>
-        </div>
+      <div class="page-footer_social">
+       <ul class="social-list">
+        <li class="social-list_twitter">
+          <a href="#"><img src="http://placehold.it/150x100" alt="Twitter">Twitter</a>
+        </li>
+        <li class="social-list_fb">
+          <a href="#"><img src="http://placehold.it/150x100" alt="Facebook">Facebook</a>
+        </li>
+        <li class="social-list_youtube">
+          <a href="#"><img src="http://placehold.it/150x100" alt="Youtube">Youtube</img></a>
+        </li>
+      </ul>
       </div>
-      <div class="copyright">
-        <span class="copyright-sign">Website by</span>
-        <a class="logo-htmlacademy" href="#">logo-htmlacademy</a>
+      <div class="page-footer_copyright">
+        <p class="page-footer_copyright-text">Website by</p>
+        <div class="page-footer_copyright-pic">
+        <a class="page-footer_copyright-pic_logo" href="#"><img src="http://placehold.it/150x100" alt="HTMLACADEMY">logo-htmlacademy</a>
+        </div>
       </div>
     </footer>
   </body>
