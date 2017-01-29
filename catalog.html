@@ -16,7 +16,7 @@
                <li class="page-header_list-item">
                  <a href="#">Фото и видео</a>
                </li>
-               <li class="page-header_list-item_logo"><a href=""><img src="img/Group%201.png" width="138" height="70" alt="city of Sedona"></a></li>
+               <li class="page-header_list-item_logo"><a href="#"><img src="img/Group%201.png" width="138" height="70" alt="city of Sedona"></a></li>
                <li class="page-header_list-item">
                  <a href="#">Карта штата</a>
                </li>
@@ -32,24 +32,36 @@
     <section>
     <div class="filters">
        <div class="filters-bg"><img src="img/rock-blur.jpg" width="1200" height="217" alt=""></div>
-        <form action="#" method="post">
+        <form action="#" method="get">
          <fieldset class="filters-checkbox">
           <legend>Инфраструктура:</legend>
+          <li>
           <label for="pool">Бассейн</label>
           <input type="checkbox" name="pool" id="pool">
+          </li>
+          <li>
           <label for="parking">Парковка</label>
           <input type="checkbox" name="parking" id="parking">
+          </li>
+           <li>
           <label for="WiFi">Wi-Fi</label>
           <input type="checkbox" name="WiFi" id="WiFi">
+          </li>
         </fieldset>
         <fieldset class="filters-checkbox">
           <legend>Тип жилья:</legend>
+          <li>
           <label for="hotel">Гостиница</label>
           <input type="checkbox" name="hotel" id="hotel">
+          </li>
+          <li>
           <label for="motel">Мотель</label>
           <input type="checkbox" name="motel" id="motel">
+          </li>
+          <li>
           <label for="apartment">Апартаменты</label>
           <input type="checkbox" name="apartment" id="apartment">
+          </li>
         </fieldset>
       <fieldset class="filters-range">
         <legend>Стоимость в cутки (Р):</legend>
