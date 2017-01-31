@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="main-header">
-     <div class="container">
+     <div class="container clearfix">
             <nav>
               <ul class="main-header_list">
                <li class="main-header_list-item">
@@ -16,7 +16,7 @@
                <li class="main-header_list-item">
                  <a href="#">Фото и видео</a>
                </li>
-               <li class="main-header_list-item_logo"><a href="#"><img src="img/Group%201.png" width="138" height="70" alt="city of Sedona"></a></li>
+               <li class="main-header_list-item"><a href="#"><img src="img/Group%201.png" width="138" height="70" alt="city of Sedona"></a></li>
                <li class="main-header_list-item">
                  <a href="#">Карта штата</a>
                </li>
@@ -28,9 +28,9 @@
       </div>
     </header>
     
-    <main class="container">
+    <main class="container clearfix">
        <div class="index-logo">
-         <div class="index-logo_bg"><img src="img/intro-bg.jpg" width="1200" height="508" alt="Welcome to Sedona"></div>
+         <!--<div class="index-logo_bg"><img src="img/intro-bg.jpg" width="1200" height="508" alt="Welcome to Sedona"></div>-->
          <div class="index-logo_text"><img src="img/welcome.png" width="458" height="352" alt="Welcome to Sedona"></div>
          <div class="index-logo_footer"><img src="img/intro-bg-footer.png" width="1200" height="57" alt="Welcome to Sedona"></div>
        </div>
@@ -41,7 +41,6 @@
            Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
          </p>
        </div>
-       
        <section class="poster">
          <div class="poster-text">
            <h2 class="poster-text_title">
@@ -71,34 +70,31 @@
           <p class="features-item_subtitle-text">Не только Китайского, но и местного производства!</p>
         </div>
       </section>
-      
-      
-      <section class="poster">
-         <div class="poster-pic">
+      <section class="poster2">
+         <div class="poster2-pic">
            <img src="img/pic-2.jpg" width="800" height="256" alt="own-live">
          </div>
-         <div class="poster-text">
-           <h2 class="poster-text_title">
+         <div class="poster2-text">
+           <h2 class="poster2-text_title">
              Там есть мост дьявола
            </h2>
-           <p class="poster-text_info">-№2-</p>
-           <p class="poster-text_info">Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+           <p class="poster2-text_info">-№2-</p>
+           <p class="poster2-text_info">Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
          </div>
       </section>
        <section class="fact">
-         <ul>
-        <li>
+         <ul class="fact_list">
+        <li class="fact_list-item">
             <h2  class="fact_title-text">Небольшая площадь</h2>
             <p class="fact_subtitle-text">-№3-</p>
             <p>Все достопримечательности находятся очень близко</p>
          </li>
-         <li>
+         <li class="fact_list-item">
            <h2 class="fact_title-text">Красивая дорога</h2>
            <p class="fact_subtitle-text">-№4-</p>
            <p class="fact_subtitle-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </li>
-         
-         <li>
+         </li>
+         <li class="fact_list-item">
            <h2 class="fact_title-text">Мало туристов</h2>
            <p class="fact_subtitle-text">-№5-</p>
            <p class="fact_subtitle-text">Большенство едет в Гранд Каньон и толпится там</p>
@@ -107,13 +103,14 @@
        </section>
        <section class="booking-container">
         <div class="booking-scene">
-         <p class="booking-scene_header"><b class="booking-scene_header-interesting">Заинтересовались?</b></p>
-         <p class="booking-scene_subtitle-text"> Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <div class="booking-scene_header"><p class="booking-scene_header"><b class="booking-scene_header-interesting">Заинтересовались?</b></p>
+         <p class="booking-scene_subtitle-text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+         </div>
          <div class="booking-scene_map">
-           <img src="img/map.png" width="1200" height="593" alt="map">
+           <img src="img/map.png" width="1200" height="473" alt="map">
          </div>
         </div>
-          <div class="form-container">
+          <!--<div class="form-container">
             <div class="form-header">
               <h2 class="form-header_title">Поиск гостиницы в Седоне</h2>
             </div>
@@ -144,31 +141,33 @@
                 </div>
               </form>
             </fieldset>
-            </div>
+            </div>-->
         </section>
-       </div>
     </main>
     <footer class="main-footer">
+     <div class="container clearfix">
       <div class="main-footer_hash-tag">
         <span class="visit">#Visitsedona</span>
       </div>
       <div class="main-footer_social">
        <ul class="social-list">
-        <li class="social-list_twitter">
+        <li class="social-list_item">
           <a href="#">Twitter</a>
         </li>
-        <li class="social-list_fb">
+        <li class="social-list_item">
           <a href="#">Facebook</a>
         </li>
-        <li class="social-list_youtube">
+        <li class="social-list_item">
           <a href="#">Youtube</a>
         </li>
       </ul>
       </div>
       <div class="main-footer_copyright">
-        <p class="main-footer_copyright-text">Website by</p>
+        <div><p class="main-footer_copyright-text">Website by</p>
+        </div>
         <div class="main-footer_copyright-pic">
         <a class="main-footer_copyright-pic_logo" href="#">logo-htmlacademy</a>
+        </div>
         </div>
       </div>
     </footer>
