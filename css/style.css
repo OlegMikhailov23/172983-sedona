@@ -34,7 +34,8 @@ h1 {
 }
 .main-header {
   margin-bottom: 75px;
-  background: white;
+  background: aqua;
+  
 }
 nav {
   width: 1060px;
@@ -139,7 +140,6 @@ nav {
   vertical-align: top;
   background-color: rgba(195,176,145,0.5);
 }
-
 .booking-scene_header {
   width: 1200px;
   height: 290px;
@@ -152,6 +152,7 @@ nav {
   margin-right: auto;
   width: 1200px;
   height: 473px;
+  z-index: 1;
 }
 
 .main-footer {
@@ -159,9 +160,9 @@ nav {
   height: 120px;
 }
 .main-footer .container {
-  margin-top: 0px;
+  box-sizing: border-box;
   padding-top: 35px;
-  padding-bottom: 35px;
+  width: 1200px;
   height: 120px;
   background: url("/Users/Dkfolkin/172983-sedona/img/footer-bg.png") no-repeat;
 }
@@ -170,18 +171,25 @@ nav {
   margin-right: 210px;
   width: 240px;
   min-height: 25px;
+  background: yellow;
 }
 .main-footer_social {
   float: left;
   margin-right: 213px;
-  min-width: 155px;
+  width: 155px;
   min-height: 55px;
+  background: yellow;
 }
 .main-footer_copyright {
   float: right;
-  min-width:  width: 240px;
+  width:  240px;
   min-height: 43px;
+  background: yellow;
 }
 .social-list_item {
   display: inline-block;
+}
+.main-footer_copyright-text, .main-footer_copyright-pic {
+  display: inline-block;
+  width: 100px;
 }
