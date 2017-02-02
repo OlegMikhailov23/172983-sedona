@@ -8,7 +8,9 @@ body {
   font-weight: normal;
   text-transform: uppercase;
 }
-*, *::before, *::after {
+*, 
+*::before, 
+*::after {
   box-sizing: inherit;
 }
 html {
@@ -39,7 +41,7 @@ h1 {
 }
 .main-header {
   margin-bottom: 75px;
-    background-color: rgb(255,255,255);
+  background-color: rgb(255,255,255);
 }
 nav {
   width: 1060px;
@@ -49,26 +51,26 @@ nav {
 .page-header{
   background-color: rgb(255,255,255);
 }
-.main-header_list-item, .page-header_list-item {
+.main-header-list-item, 
+.page-header-list-item {
   display: inline-block;
   width: 100px;
   vertical-align: top;
 }
-
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
-.index-logo_text {
+.index-logo-text {
   margin-left: auto;
   margin-right: auto;
   width: 460px;
   height: 352px;
   margin-bottom: 24px;
-  background-color: rgba(0,255,255,0.5)
+  background-color: rgba(0,255,255,0.5);
 }
-.index-logo_footer {
+.index-logo-footer {
   width: 1200px;
   height: 57px;
   margin-right: auto;
@@ -98,7 +100,7 @@ nav {
   margin-bottom: 50px;
 }
 .poster2-pic {
-  float:left;
+  float: left;
   height: 256px;
 }
 .poster2-text {
@@ -138,7 +140,7 @@ nav {
   margin-left: auto;
   background-color: rgba(251,206,177,0.5);
 }
-.fact_list-item {
+.fact-list-item {
   font-size: 14px;
   display: inline-block;
   width: 400px;
@@ -146,22 +148,21 @@ nav {
   vertical-align: top;
   background-color: rgba(195,176,145,0.5);
 }
-.booking-scene_header {
+.booking-scene-header {
   width: 1200px;
   height: 290px;
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(195,176,145,0.5);
 }
-.booking-scene_map {
+.booking-scene-map {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   height: 473px;
-  z-index: 1;
 }
 
-.main-footer, .page-footer {
+.main-footer, 
+.page-footer {
   min-height: 120px;
 }
 .main-footer .container {
@@ -176,32 +177,36 @@ nav {
   padding-top: 35px;
   width: 1200px;
   height: 120px;
-  background-color: rgb(254,254,254)
+  background-color: rgb(254,254,254);
 }
-.main-footer_hash-tag, .page-footer_hash-tag {
+.main-footer .hash-tag, 
+.page-footer .hash-tag {
   float: left;
   margin-right: 210px;
   width: 240px;
   min-height: 25px;
   background: yellow;
 }
-.main-footer_social, .page-footer_social {
+.main-footer .social, 
+.page-footer .social {
   float: left;
   margin-right: 213px;
   width: 155px;
   min-height: 55px;
   background: yellow;
 }
-.main-footer_copyright, .page-footer_copyright {
+.main-footer .copyright, 
+.page-footer .copyright {
   float: right;
   width:  240px;
   min-height: 43px;
   background: yellow;
 }
-.social-list_item {
+.social-list-item {
   display: inline-block;
 }
-.main-footer_copyright-text, .main-footer_copyright-pic {
+.main-footer-text, 
+.main-footer-pic {
   display: inline-block;
   width: 100px;
 }
@@ -226,39 +231,40 @@ nav {
   min-height: 160px;
   margin-right: 72px;
 }
-.result-heder {
+.result-header {
   min-height: 86px;
   background: red;
   padding-top: 28px;
   border-bottom: 1px solid rgb(249,249,249);
   background-color:   rgb(254,254,254);
 }
-.result-heder-text_title {
+.result-header-title-text {
   display: inline-block;
   width: 116px;
   margin-left: 73px;
   margin-right: 50px;
 }
-.result-header-text_sort {
+.result-header-sort-text {
   display: inline-block;
   margin-right: 40px;
   width: 78px;
 }
-.result-header_sort-list {
+.result-header-sort-list {
   display: inline-block;
   width: auto;
 }
-.result-header_sort-list_item {
+.sort-list-item {
   display: inline-block;
   margin-right: 35px;
   width: auto;
 }
-.result-heder_arrow {
+.result-header-arrow {
   float: right;
-  width: 35px;
+  width: 35px; 
   margin-right: 73px;
 }
-.result-heder_arrow-up, .result-heder_arrow-down {
+.arrow-up, 
+.arrow-down {
   display: inline-block;
 }
 .result-find {
@@ -268,35 +274,37 @@ nav {
   border-bottom: 1px solid rgb(249,249,249);
   background-color:   rgb(254,254,254);
 }
-.result-find_pic {
+.result-find-pic {
   min-height: 90px;
   width: 135px;
   margin-left: 73px;
   margin-right: 30px;
   float: left;
 }
-.result-find_info {
+.result-find-info {
   float:left;
   width: 300px;
 }
-.result-find_info-text_subtitle {
+.info-title-text, 
+.info-subtitle-text {
   display: inline-block;
   margin-right: 65px;
   width: auto;
 }
-.result-find_info_list {
+
+.result-find-info-list {
   width: 260px;
 }
-.result-find_info_list-link {
+.info-list-link {
   display: inline-block;
   margin-right: 5px;
   width: auto;
 }
-.result-find_raiting {
+.result-find-raiting {
   margin-right: 70px;
   float: right;
   text-align: right;
 }
-.result-find_raiting-stars {
+.raiting-stars {
   margin-bottom: 45px;
 }
