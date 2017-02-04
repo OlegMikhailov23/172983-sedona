@@ -288,14 +288,27 @@ nav li {
 }
 .booking-scene-header {
   width: 1200px;
-  height: 290px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(195,176,145,0.5);
+  background-color: rgb(255, 255, 255);
+}
+.booking-scene-header h2 {
+    margin: 0;
+    padding: 0;
+    padding-top: 55px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: 700;
 }
 .booking-scene-header p {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 137px;
+    line-height: 24px;
+    text-align: center;
+    
 }
 .booking-scene-map {
   margin-left: auto;
@@ -312,40 +325,50 @@ nav li {
   padding-top: 35px;
   width: 1200px;
   height: 120px;
-  background: url("/Users/Dkfolkin/172983-sedona/img/footer-bg.png") no-repeat;
+  background: url("../img/footer-bg.png") no-repeat;
 }
 .page-footer .container {
-  box-sizing: border-box;
   padding-top: 35px;
   width: 1200px;
-  height: 120px;
   background-color: rgb(254,254,254);
 }
-.main-footer .hash-tag, 
-.page-footer .hash-tag {
+.main-footer-hashtag {
   float: left;
-  margin-right: 210px;
-  width: 240px;
-  min-height: 25px;
-  background: yellow;
+  margin: 0;
+  padding: 0;
+  margin-right: 252px;
+  padding-top: 13px;
+  margin-left: 133px;
+  min-width: 140px;
 }
-.main-footer .social, 
-.page-footer .social {
+.main-footer-hashtag span {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700
+}
+.main-footer-social, 
+.page-footer-social {
   float: left;
   margin-right: 213px;
-  width: 155px;
+  min-width: 150px;
   min-height: 55px;
-  background: yellow;
 }
+
 .main-footer .copyright, 
 .page-footer .copyright {
   float: right;
-  width:  240px;
+  min-width:  240px;
   min-height: 43px;
   background: yellow;
 }
-.social-list-item {
-  display: inline-block;
+.social-btn {
+    display: inline-block;
+    font-size: 0;
+    width: 45px;
+    height: 48px;
+    margin: 0 2px;
+    text-decoration: none;
+    background: rgb(129, 179, 210) url("");
 }
 .main-footer-text, 
 .main-footer-pic {
