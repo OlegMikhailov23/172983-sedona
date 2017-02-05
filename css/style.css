@@ -36,10 +36,8 @@ p {
     padding: 0;
 }
 .main-header {
-    
     background-color: rgb(255,255,255);
-    color: #000000;
-    
+    color: #000000; 
 }
 nav {
   width: 1170px;
@@ -149,7 +147,7 @@ nav li {
     padding-left: 105px;
     padding-right: 108px;
     padding-top: 35px;
-    padding-bottom: 35px;
+    padding-bottom: 43px;
     margin: 0;
     line-height: 26px;
     text-align: center;
@@ -225,7 +223,7 @@ nav li {
   min-height: 190px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 65px;
+  margin-bottom: 78px;
 }
 .features-item {
   font-size: 14px;
@@ -313,19 +311,23 @@ nav li {
 .booking-scene-map {
   margin-left: auto;
   margin-right: auto;
-  height: 473px;
+  height: 593px;
+  background: url("../img/map2.png");
 }
 
 .main-footer, 
 .page-footer {
   min-height: 120px;
 }
+
 .main-footer .container {
-  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  margin-top: -120px;
   padding-top: 35px;
   width: 1200px;
-  height: 120px;
-  background: url("../img/footer-bg.png") no-repeat;
+  padding-bottom: 36px;
+  background: rgba(249, 251, 246, 0.8)
 }
 .page-footer .container {
   padding-top: 35px;
@@ -349,17 +351,41 @@ nav li {
 .main-footer-social, 
 .page-footer-social {
   float: left;
-  margin-right: 213px;
   min-width: 150px;
   min-height: 55px;
 }
 
-.main-footer .copyright, 
-.page-footer .copyright {
-  float: right;
-  min-width:  240px;
+.main-footer-copyright, 
+.page-footer-copyright {
+  position: relative;
+    float: right;
+    margin-right: 102px;
+  margin-top: 5px;
+  min-width:  110px;
   min-height: 43px;
-  background: yellow;
+}
+.copyright-btn {
+    display: inline-block;
+    width: 115px;
+    height: 39px;
+    font-size: 0;
+    text-decoration: none;
+    color: #000000;
+    background: url("../img/copyright.png") no-repeat;
+}
+.copyright-btn::before {
+    position: relative;
+    left:-80px;
+    top: 5px;
+    content: "website by";
+    font-size: 14px;
+    line-height: 26px;
+}
+.copyright-btn:hover {
+    background: url("../img/copyright-hover.png") no-repeat;
+}
+.copyright-btn:active {
+    background: url("../img/copyright-active.png") no-repeat;
 }
 .social-btn {
     display: inline-block;
@@ -368,12 +394,31 @@ nav li {
     height: 48px;
     margin: 0 2px;
     text-decoration: none;
-    background: rgb(129, 179, 210) url("");
+    background: rgb(129, 179, 210) url("../img/social-sprite.png") no-repeat center;
 }
-.main-footer-text, 
-.main-footer-pic {
-  display: inline-block;
-  width: 100px;
+.social-btn-tv { 
+    background-position: -80px 0px;
+}
+.social-btn-fb {
+    background-position: 3px -3px;
+}
+.social-btn-yt {
+    background-position: -227px 0px;
+}
+.social-btn:hover {
+    background-color: rgb(102, 158, 192);
+}
+.social-btn-tv:active {
+    background-color: rgb(84, 150, 189);
+    background-position: -127px 0px;
+}
+.social-btn-fb:active {
+    background-color: rgb(84, 150, 189);
+    background-position: -37px -3px;
+}
+.social-btn-yt:active {
+    background-color: rgb(84, 150, 189);
+    background-position: -177px 0px;
 }
 .filters {
   min-height: 218px;
