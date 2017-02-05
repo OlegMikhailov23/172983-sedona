@@ -334,7 +334,8 @@ nav li {
   width: 1200px;
   background-color: rgb(254,254,254);
 }
-.main-footer-hashtag {
+.main-footer-hashtag, 
+.page-footer-hashtag {
   float: left;
   margin: 0;
   padding: 0;
@@ -343,7 +344,8 @@ nav li {
   margin-left: 133px;
   min-width: 140px;
 }
-.main-footer-hashtag span {
+.main-footer-hashtag span,
+.page-footer-hashtag span{
     font-size: 21px;
     line-height: 26px;
     font-weight: 700
@@ -426,6 +428,15 @@ nav li {
   padding-bottom: 32px;
   background: url("/Users/Dkfolkin/172983-sedona/img/rock-blur.jpg") no-repeat;
 }
+.filters-checkbox ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.filters fieldset {
+    border: 0;
+}
 .filters-checkbox {
   float: left;
   width: 150px;
@@ -435,12 +446,73 @@ nav li {
 .filters-checkbox:first-child {
   margin-left: 72px;
 }
+.filters-checkbox legend {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.filters-checkbox label {
+    color: #ffffff;
+}
+.filters-checkbox li {
+    padding-top: 28px;
+}
+.filters-checkbox input[type="checkbox"] {
+    display: none;
+}
+.filters-checkbox input[type="checkbox"] + label {
+    display: block;
+    line-height: 21px;
+    padding-left: 43px;
+    position: relative;
+    cursor: pointer;
+}
+.filters-checkbox input[type="checkbox"] + label::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 22px;
+    background: url("../img/check-empty.png") no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.filters-checkbox input[type="checkbox"]:checked + label::before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url("../img/check.png") no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .filters-range {
   float: right;
   width: 335px;
   min-height: 160px;
   margin-right: 72px;
 }
+.filters-range a {
+    display: inline-block;
+    padding: 9px 35px;
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+}
+.filters-range a:hover {
+    color: #000000;
+    background: rgb(255, 255, 255);
+}
+.filters-range legend {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
 .result-header {
   min-height: 86px;
   background: red;
