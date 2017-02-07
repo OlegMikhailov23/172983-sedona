@@ -104,6 +104,9 @@ nav li {
     font-size: 14px;
     line-height: 26px;
 }
+.page-header .current {
+    color: #766357;
+}
 .clearfix::after {
   content: "";
   display: table;
@@ -423,10 +426,9 @@ nav li {
     background-position: -177px 0px;
 }
 .filters {
-  min-height: 218px;
   padding-top: 25px;
-  padding-bottom: 32px;
-  background: url("/Users/Dkfolkin/172983-sedona/img/rock-blur.jpg") no-repeat;
+  padding-bottom: 31px;
+  background: #778899 url("../img/rock-blur.jpg") no-repeat;
 }
 .filters-checkbox ul{
     margin: 0;
@@ -453,6 +455,7 @@ nav li {
     font-weight: 700;
     color: #ffffff;
 }
+
 .filters-checkbox label {
     color: #ffffff;
 }
@@ -571,59 +574,94 @@ nav li {
 }
 .result-header {
   min-height: 86px;
-  background: red;
-  padding-top: 28px;
+  padding-top: 31px;
+  padding-bottom: 34px;
   border-bottom: 1px solid rgb(249,249,249);
   background-color:   rgb(254,254,254);
 }
-.result-header-title-text {
-  display: inline-block;
-  width: 116px;
-  margin-left: 73px;
-  margin-right: 50px;
+.result-header h2{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    padding-left: 73px;
+    padding-right: 50px;
 }
-.result-header-sort-text {
-  display: inline-block;
-  margin-right: 40px;
-  width: 78px;
+.result-header p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    padding-right: 39px;
+    font-size: 12px;
+    line-height: 18px
 }
+
 .result-header-sort-list {
   display: inline-block;
   width: auto;
 }
+.result-header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 .sort-list-item {
   display: inline-block;
-  margin-right: 35px;
+  padding-right: 35px;
   width: auto;
 }
-.result-header-sort-list a{
+.result-header-sort-list a:not(.price-current){
     text-decoration: none;
     font-size: 12px;
     line-height: 18px;
     color: rgba(0, 0, 0,0.3);
     border-bottom: 1px dashed #81b3d2;
 }
-.result-header-sort-list a:hover {
+
+.result-header-sort-list a:hover:not(.price-current) {
     color: #81b3d2;
 }
-.result-header-sort-list a:active {
+.result-header-sort-list a:active:not(.price-current) {
     color: #000000;
     border: 0;
 }
+.price-current {
+    color: #81b3d2;
+    font-size: 12px;
+    line-height: 18px;
+}
 .result-header-arrow {
-  float: right;
-  width: 35px; 
-  margin-right: 73px;
+  float: right; 
+  padding-right: 73px;
+    padding-top: 5px;
 }
 .arrow-up, 
 .arrow-down {
-  display: inline-block;
-    font-size: 0;
-    
-    background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
-
+   display: inline-block;
+    width: 11px;
+    height: 10px;
+   font-size: 0;
+    vertical-align: bottom;
+   background-image: url(../img/arrow-sprite.png);
+   background-repeat: no-repeat;
+}
+.arrow-up {
+    background-position: -165px -10px;
+    margin-right: 10px;
+}
+.arrow-up:hover {
+    background-position: -41px -10px;
+}
+.arrow-up:active {
+    background-position: -103px -10px;
+}
+.arrow-down {
+    background-position: -134px -10px;
+}
+.arrow-down:hover {
+    background-position: -10px -10px;
+}
+.arrow-down:active {
+    background-position: -72px -10px;
 }
 .result-find {
   padding-top: 30px;
@@ -632,8 +670,21 @@ nav li {
   border-bottom: 1px solid rgb(249,249,249);
   background-color:   rgb(254,254,254);
 }
+.result-find h2{
+    margin: 0;
+    padding: 0;
+    min-width: 250px;
+    vertical-align: top;
+    line-height: 20px;
+}
+.result-find h2:hover {
+    color: #81b3d2
+}
+.result-find h2:active {
+    color: rgba(0, 0, 0, 0.3);
+}
 .result-find-pic {
-  min-height: 90px;
+  height: 90px;
   width: 135px;
   margin-left: 73px;
   margin-right: 30px;
@@ -642,27 +693,62 @@ nav li {
 .result-find-info {
   float:left;
   width: 300px;
+    max-height: 90px;
 }
 .info-title-text, 
 .info-subtitle-text {
   display: inline-block;
-  margin-right: 65px;
-  width: auto;
 }
-
-.result-find-info-list {
-  width: 260px;
+.info-subtitle-text {
+    margin: 0;
+    padding: 0;
+    width:109px;
+    padding-top: 5px;
+    text-align: left;
 }
-.info-list-link {
-  display: inline-block;
-  margin-right: 5px;
-  width: auto;
+.info-btn {
+    display: inline-block;
+    margin-top: 12px;
+    margin-right: 5px;
+    padding: 5px 16px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+}
+.details {
+    background: rgb(129, 179, 210);
+}
+.details:hover {
+    background: #669ec0;
+}
+.details:active {
+   background:  #5496bd;
+   color: rgba(255, 255, 255, 0.3);
+}
+.booking {
+  background: rgb(118, 99, 87);
+}
+.booking:hover {
+    background: #604e43;
+}
+.booking:active {
+    background:  #503e33;
+    color: rgba(255, 255, 255, 0.3);
+}
+.raiting-field p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    padding: 5px 9px;
+    background: rgb(242, 242, 242);
 }
 .result-find-raiting {
   margin-right: 70px;
   float: right;
   text-align: right;
+    
 }
 .raiting-stars {
-  margin-bottom: 45px;
+  margin-bottom: 36px;
 }
