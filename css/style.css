@@ -440,13 +440,14 @@ nav li {
 .filters-checkbox {
   float: left;
   width: 150px;
-  min-height: 160px;
   margin-right: 103px;
 }
 .filters-checkbox:first-child {
   margin-left: 72px;
 }
 .filters-checkbox legend {
+    margin: 0;
+    padding: 0;
     font-size: 16px;
     line-height: 21px;
     font-weight: 700;
@@ -456,7 +457,7 @@ nav li {
     color: #ffffff;
 }
 .filters-checkbox li {
-    padding-top: 28px;
+    padding-top: 21px;
 }
 .filters-checkbox input[type="checkbox"] {
     display: none;
@@ -488,11 +489,67 @@ nav li {
     top: 0;
     left: 0;
 }
+.filters-checkbox input[type="checkbox"]:disabled + label::before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url("../img/check-disabled.png") no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .filters-range {
   float: right;
   width: 335px;
   min-height: 160px;
   margin-right: 72px;
+}
+.price-controls label {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.price-controls label:nth-child(1) {
+    margin-right: 35px;
+    display: inline-block;
+    position: relative;
+}
+.price-controls label:nth-child(1)::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 22px;
+    background: url("../img/prise-defense.png") no-repeat;
+    right: -3px;
+    top:0 
+}
+
+.price-controls {
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    width: 224px;
+    padding-left: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+.price-controls input[type="text"]{
+    display: inline-block;
+    color: #ffffff;
+    background: 0;
+    border: 0;
+    width: 40px;
+    position: relative;
+    outline: none;
+}
+.range-filter input[type="text"] {
+    font-size: 14px;
+    color: #ffffff;
+    width: 48px;
+    background: 0;
+    border: 0;
+    cursor: pointer;
 }
 .filters-range a {
     display: inline-block;
@@ -512,7 +569,6 @@ nav li {
     font-weight: 700;
     color: #ffffff;
 }
-
 .result-header {
   min-height: 86px;
   background: red;
@@ -540,6 +596,20 @@ nav li {
   margin-right: 35px;
   width: auto;
 }
+.result-header-sort-list a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(0, 0, 0,0.3);
+    border-bottom: 1px dashed #81b3d2;
+}
+.result-header-sort-list a:hover {
+    color: #81b3d2;
+}
+.result-header-sort-list a:active {
+    color: #000000;
+    border: 0;
+}
 .result-header-arrow {
   float: right;
   width: 35px; 
@@ -548,6 +618,12 @@ nav li {
 .arrow-up, 
 .arrow-down {
   display: inline-block;
+    font-size: 0;
+    
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+
 }
 .result-find {
   padding-top: 30px;

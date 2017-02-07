@@ -62,7 +62,7 @@
           <label for="motel">Мотель</label>
           </li>
           <li class="checkbox-item">
-          <input type="checkbox" name="apartment" id="apartment">
+          <input type="checkbox" name="apartment" id="apartment" disabled>
           <label for="apartment">Апартаменты</label>
           </li>
           </ul>
@@ -71,8 +71,12 @@
         <legend>Стоимость в cутки (Р):</legend>
             <div class="range-filter">
             <div class="price-controls">
-                от <input class="min-price" type="text" value="0">
-                до <input class="max-price" type="text" value="3000">
+               <label>от
+                <input class="min-price" type="text" value="0" id="min-price">
+                </label>
+                <label>до
+                <input class="max-price" type="text" value="3000" id="max-price"> 
+                </label>
             </div>
             <div class="range-controls">
                 <div class="scale"><div style="margin-left:50px;width:100px;" class="bar"></div></div>
