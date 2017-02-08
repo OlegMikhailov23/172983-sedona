@@ -502,80 +502,120 @@ nav li {
     top: 0;
     left: 0;
 }
-.filters-range {
-  float: right;
-  width: 335px;
-  min-height: 160px;
-  margin-right: 72px;
-}
-.price-controls label {
+.filter-range {
+    float: right;
+    margin-right: 72px;
+    width: 330px;
     color: #ffffff;
-    cursor: pointer;
 }
-
-.price-controls label:nth-child(1) {
-    margin-right: 35px;
-    display: inline-block;
-    position: relative;
-}
-.price-controls label:nth-child(1)::after {
-    position: absolute;
-    content: "";
-    width: 2px;
-    height: 22px;
-    background: url("../img/prise-defense.png") no-repeat;
-    right: -3px;
-    top:0 
-}
-
-.price-controls {
-    border: 2px solid #ffffff;
-    border-radius: 2px;
-    width: 224px;
-    padding-left: 40px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    cursor: pointer;
-}
-.price-controls input[type="text"]{
-    display: inline-block;
-    color: #ffffff;
-    background: 0;
-    border: 0;
-    width: 40px;
-    position: relative;
-    outline: none;
-}
-.range-filter input[type="text"] {
-    font-size: 14px;
-    color: #ffffff;
-    width: 48px;
-    background: 0;
-    border: 0;
-    cursor: pointer;
-}
-.filters-range a {
-    display: inline-block;
-    padding: 9px 35px;
-    text-decoration: none;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    border-radius: 2px;
-}
-.filters-range a:hover {
-    color: #000000;
-    background: rgb(255, 255, 255);
-}
-.filters-range legend {
+.filter-range-title {
+    margin-bottom: 9px;
     font-size: 16px;
     line-height: 21px;
-    font-weight: 700;
-    color: #ffffff;
+    font-weight: 600;
+}
+.price-controls {
+    box-sizing: content-box;
+    position: relative;
+    height: 36px;
+    margin-bottom: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    font-size: 0;
+}
+.price-controls:after {
+    content: "";
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 2px;
+    height: 22px;
+    
+    background: #ffffff;
+}
+.price-controls label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+    cursor: pointer;
+}
+.price-controls .min-price,
+.price-controls .max-price {
+    padding-left: 65px;
+}
+.price-controls .min-price {
+    margin-right: 10px;
+}
+.price-controls input {
+    width: 50px;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;
+    outline: none;
+}
+.range-controls {
+    position: relative;
+    margin-bottom: 32px;
+}
+.range-controls .scale {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
+}
+.range-toggle {
+    position: absolute;
+    box-sizing: content-box;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+.range-toggle-min {
+    left: 0;
+}
+.range-toggle-max {
+    left: 80%;
+}
+.range-toggle:hover {
+    background: #1c4f80;
+}
+.btn-transparent {
+    display: block;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 6px 35px;
+    
+    font-size: 14px;
+    line-height: 20px;
+    
+    color: inherit;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+}
+.btn-transparent:hover {
+    color: #000000;
+    background: rgb(255, 255, 255); 
 }
 .result-header {
   min-height: 86px;
-  padding-top: 31px;
-  padding-bottom: 34px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   border-bottom: 1px solid rgb(249,249,249);
   background-color:   rgb(254,254,254);
 }
