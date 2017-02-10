@@ -832,8 +832,24 @@ nav li {
 }
 .arrive-field input, 
 .depart-field input {
+    position: relative;
+    padding-left: 12px;
+    padding-right: 40px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
     width: 346px;
     line-height: 38px;
+}
+.arrive-field input::-webkit-input-placeholder, 
+.depart-field input::-webkit-input-placeholder {
+    color: #000000;
+}
+.arrive-field input::-moz-placeholder, 
+.depart-field input::-moz-placeholder {
+    color: #000000;
 }
 .arrive-field input {
     margin-left: 22px;
@@ -842,4 +858,121 @@ nav li {
 .depart-field input {
     margin-left: 18px;
     margin-bottom: 30px;
+}
+.people-count-field input {
+    position: relative;
+    width: 115px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: inherit;
+    text-align: center;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 38px;
+}
+.count-adult input {
+    margin-left: 38px;
+}
+.count-child {
+    margin-left: 54px;
+}
+.count-child input {
+   margin-left: 17px; 
+}
+.calendar {
+    width: 23px;
+    height: 23px;
+    border: none;
+    background: url(../img/calendar-sprite.png) no-repeat;
+    background-position: -117px -15px;
+    cursor: pointer;
+}
+.calendar-arrive {
+    position: absolute;
+    right: 60px;
+    top: 150px;
+}
+.calendar-departure {
+    position: absolute;
+    right: 60px;
+    top: 220px;
+}
+.calendar-departure:hover,
+.calendar-arrive:hover {
+    background-position: -15px -15px;
+}
+.calendar-departure:active,
+.calendar-arrive:active {
+    background-position: -66px -15px;
+}
+.icon {
+    width: 13px;
+    height: 13px;
+    background: url(../img/plus-minus-sprite.png) no-repeat; 
+    border: none;
+    cursor: pointer;
+}
+.icon-minus {
+    background-position: -74px -5px;
+}
+.icon-plus {
+    background-position: -167px -9px;
+}
+.count-adult  .icon-minus {
+    position: absolute;
+    top: 295px;
+    left: 180px;
+    z-index: 1;
+}
+.count-adult  .icon-plus {
+    position: absolute;
+    top: 295px;
+    left: 260px;
+}
+.count-child .icon-minus {
+    position: absolute;
+    top: 295px;
+    left: 410px;
+    z-index: 1;
+}
+.count-child .icon-plus {
+    position: absolute;
+    top: 295px;
+    left: 491px;
+}
+.icon-minus:hover {
+    background-position: -10px -5px;
+}
+.icon-minus:active {
+    background-position: -42px -5px;
+}
+.icon-plus:hover {
+    background-position: -106px -9px;
+}
+.icon-plus:active {
+    background-position: -137px -9px;
+}
+.modal-content-form .search-btn {
+    display: block;
+    width: 458px;
+    background: red;
+    margin-top: 54px;
+    padding: 18px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    color: #ffffff;
+    text-transform: inherit;
+    background: #81b3d2;
+}
+.modal-content-form .search-btn:hover {
+    background: #669ec0;
+}
+.modal-content-form .search-btn:active {
+    background: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
 }

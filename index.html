@@ -166,28 +166,29 @@
             <form action="#" method="post">
             <div class="arrive-field">
             <label class="arrive-date">Дата заезда:  
-                <input type="date" name="arrive-date"><span class="arrive-date-icon"></span>
+                <input type="text" name="arrive-date" placeholder="24 Апреля 2017">
+                <button class="calendar calendar-arrive" type="button"></button>
             </label>
             </div>
             <div class="depart-field">
             <label class="departure-date">Дата выезда:  
-                <input type="date" name="departure-date">
-                <span class="departure-date-icon"></span>
+                <input type="text" name="departure-date" placeholder="4 июля 2017">
+                <button class="calendar calendar-departure" type="button"></button>
             </label>
             </div>
             <div class="people-count-field">
                 <label class="count-adult">Взрослые: 
-                <button class="icon-minus" type="button" tabindex="-1"></button>
                 <input type="text" name="counter-adult" value="2">
-                <button class="icon-plus" type="button" tabindex="-1"></button>
+                <button class="icon icon-minus" type="button" tabindex="-1"></button>
+                <button class="icon icon-plus" type="button" tabindex="-1"></button>
                 </label>
                 <label class="count-child">Дети: 
-                <button class="icon-minus" type="button" tabindex="-1"></button>
                 <input type="text" name="counter-adult" value="0">
-                <button class="icon-plus" type="button" tabindex="-1"></button>
+                <button class="icon icon-minus" type="button" tabindex="-1"></button>
+                <button class="icon icon-plus" type="button" tabindex="-1"></button>
                 </label>
-                
             </div>
+            <input class="search-btn" type="submit" value="Найти">
             
             </form>
         </div>
