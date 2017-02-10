@@ -1,11 +1,11 @@
 body {
-  min-width: 1200px;
+  min-width: 1280px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
   text-transform: uppercase;
-  background: rgba(255, 255, 255);
+  background: #f2f2f2;
   color: #000000;
 }
 *, 
@@ -31,16 +31,23 @@ p {
     color: #333333;
 }
 .container {
+    padding-left: 40px;
+    padding-right: 40px;
   width: 1200px;
   margin: 0 auto;
     padding: 0;
+    background: rgb(255, 255, 255);
+    box-shadow: -4px 0 2px -2px rgba(0,0,0,0.2),
+                4px 0 2px -2px rgba(0,0,0,0.2);
 }
 .main-header {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
     background-color: rgb(255,255,255);
     color: #000000; 
 }
 nav {
-  width: 1170px;
   margin: 0 auto;
 }
 nav a {
@@ -51,30 +58,34 @@ nav a {
     font-weight: bold;
 }
 nav li:first-child a {
-    margin-left: 15px;
-    padding-left: 43px;
-    padding-right: 83px;
+    float: left;
+    width: 240px;
+    text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 nav li:nth-child(2) a {
-    padding-left: 63px;
-    padding-right: 74px;
+    float: left;
+    width: 240px;
+    margin-right: 240px;
     padding-top: 15px;
     padding-bottom: 15px;
+    text-align: center;
+}
+nav li:nth-child(3) a {
+    float: right;
+    width: 240px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    
 }
 nav li:nth-child(4) a {
-    margin-left: 235px;
+    float: right;
+    width: 240px;
+    text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 83px;
-    padding-right: 66px;
-}
-nav li:nth-child(5) a {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 100px;
-    padding-right: 52px;
 }
 nav ul {
     position: relative;
@@ -83,10 +94,11 @@ nav ul {
     list-style: none;
     font-size: 0;
 }
-nav li:nth-child(3) {
+.logo {
     position: absolute;
     top:0;
     right:517px;
+    z-index: 1;
 }
 nav a:hover {
     color: #81b3d2;
@@ -132,7 +144,7 @@ nav li {
   margin-left: auto;
 }
 .intro {
-  width: 705px;
+  width: 1200px;
   min-height: 100px;
   margin-right: auto;
   margin-left: auto;
@@ -160,13 +172,12 @@ nav li {
   min-height: 256px;
   margin: 0 auto;
   background-color: darksalmon;
-  margin-bottom: 58px;
 }
 .poster2 {
   width: 1200px;
   min-height: 256px;
   margin: 0 auto;
-  background-color: darksalmon;
+  background-color: darksalmon;  
 }
 .poster-pic {
     height: 256px;
@@ -226,7 +237,6 @@ nav li {
   min-height: 190px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 78px;
 }
 .features-item {
   font-size: 14px;
@@ -330,12 +340,13 @@ nav li {
   padding-top: 35px;
   width: 1200px;
   padding-bottom: 36px;
-  background: rgba(249, 251, 246, 0.8)
+  background: rgba(249, 251, 246, 0.8); 
+  box-shadow: none;    
 }
 .page-footer .container {
   padding-top: 35px;
   width: 1200px;
-  background-color: rgb(254,254,254);
+  background-color: rgb(254,254,254);     
 }
 .main-footer-hashtag, 
 .page-footer-hashtag {
@@ -794,13 +805,14 @@ nav li {
   margin-bottom: 36px;
 }
 .modal-content {
-    position: absolute;
+    position: fixed;
     width: 568px;
     min-height: 481px;
     background: #ffffff;
     left: 50%;
+    top:50%;
+    margin-top: -240px;
     margin-left: -284px;
-    bottom: -1730px;
     color: #000000;
 }
 .modal-content-title {
