@@ -1,5 +1,6 @@
 body {
   min-width: 1280px;
+    position: relative;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -233,10 +234,11 @@ nav li {
 }
 .features {
   font-size: 0;
-  width: 1200px;
-  min-height: 190px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 60px;
+  padding-bottom: 85px;
 }
 .features-item {
   font-size: 14px;
@@ -805,31 +807,39 @@ nav li {
   margin-bottom: 36px;
 }
 .modal-content {
-    position: fixed;
+    position: absolute;
     width: 568px;
     min-height: 481px;
     background: #ffffff;
     left: 50%;
     top:50%;
+    transform: translate(0px,924px);
     margin-top: -240px;
     margin-left: -284px;
     color: #000000;
 }
-.modal-content-title {
+.modal-content-title-btn {
+    position: relative;
+    display: block;
+    width: 100%;
     padding-top: 30px;
     padding-bottom: 31px;
+    font-family: inherit;
+    text-transform: inherit;
     font-size: 21px;
     line-height: 26px;
-    font-weight: ;
+    font-weight: 600;
     background: #766357;
     color: #ffffff;
     text-align: center;
     font-weight: 600;
+    z-index: 1;
 }
 .modal-content-form {
     padding-left: 55px;
     padding-top: 55px;
     padding-bottom: 53px;
+    box-shadow: 0 5px 50px 1px grey;
 }
 .modal-content-form label{
     color: #000000;
