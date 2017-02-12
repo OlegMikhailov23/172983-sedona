@@ -41,7 +41,8 @@ p {
     box-shadow: -4px 0 2px -2px rgba(0,0,0,0.2),
                 4px 0 2px -2px rgba(0,0,0,0.2);
 }
-.main-header {
+.main-header,
+.page-header {
     position: relative;
     width: 1200px;
     margin: 0 auto;
@@ -50,6 +51,9 @@ p {
 }
 nav {
   margin: 0 auto;
+}
+section {
+    box-shadow: none;
 }
 nav a {
     display: block;
@@ -87,6 +91,8 @@ nav li:nth-child(4) a {
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
+    padding-left: 10px;
+    
 }
 nav ul {
     position: relative;
@@ -98,7 +104,7 @@ nav ul {
 .logo {
     position: absolute;
     top:0;
-    right:517px;
+    right:530px;
     z-index: 1;
 }
 nav a:hover {
@@ -145,7 +151,7 @@ nav li {
   margin-left: auto;
 }
 .intro {
-  width: 1200px;
+  width: 100%;
   min-height: 100px;
   margin-right: auto;
   margin-left: auto;
@@ -153,17 +159,17 @@ nav li {
 .intro h2 {
     margin: 0;
     padding-top: 60px;
-    padding-left: 132px;
-    padding-right: 132px;
+    padding-left: 380px;
+    padding-right: 380px;
     text-align: center;
-    font-weight: bold;
+    font-weight: 550;
 }
 .intro p {
     margin: 0;
     padding-left: 105px;
     padding-right: 108px;
-    padding-top: 35px;
-    padding-bottom: 43px;
+    padding-top: 27px;
+    padding-bottom: 50px;
     margin: 0;
     line-height: 26px;
     text-align: center;
@@ -204,6 +210,7 @@ nav li {
     padding-left: 140px;
     padding-right: 138px;
     padding-top: 55px;
+    padding-bottom: ;
     line-height: 21px;
     text-align: center;
     color:#ffffff;
@@ -219,6 +226,9 @@ nav li {
 }
 .poster-text p, 
 .poster2-text p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
     margin: 0;
     text-align: center;
     color: #ffffff;
@@ -226,7 +236,7 @@ nav li {
 }
 .info-text-number {
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 .poster-text .info-text {
     padding-left: 60px;
@@ -238,7 +248,7 @@ nav li {
   margin-right: auto;
   margin-left: auto;
   padding-top: 60px;
-  padding-bottom: 85px;
+  padding-bottom: 82px;
 }
 .features-item {
   font-size: 14px;
@@ -257,16 +267,16 @@ nav li {
 
 .features-item h2 {
     padding: 0;
-    padding-top: 30px;
+    padding-top: 27px;
     line-height: 21px;
     margin: 0;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
 }
 .features-item p, .fact-list-item p {
     margin: 0;
     padding: 0;
-    padding-top: 25px;
+    padding-top: 23px;
     text-align: center;
     color: #333333;
 }
@@ -292,9 +302,13 @@ nav li {
     
     margin: 0;
     padding: 0;
-    padding-top: 45px;
+    font-family: inherit;
+    
+    padding-top: 48px;
     line-height: 21px;
-    text-align: center
+    font-size: 21px;
+    font-weight: 600;
+    text-align: center;
 }
 .fact-list-item p:nth-child(3) {
     padding-bottom: 55px;
@@ -308,7 +322,7 @@ nav li {
 .booking-scene-header h2 {
     margin: 0;
     padding: 0;
-    padding-top: 55px;
+    padding-top: 60px;
     text-align: center;
     font-size: 30px;
     line-height: 24px;
@@ -317,8 +331,8 @@ nav li {
 .booking-scene-header p {
     margin: 0;
     padding: 0;
-    padding-top: 25px;
-    padding-bottom: 137px;
+    padding-top: 28px;
+    padding-bottom: 130px;
     line-height: 24px;
     text-align: center;
     
@@ -329,7 +343,6 @@ nav li {
   height: 593px;
   background: url("../img/map2.png");
 }
-
 .main-footer, 
 .page-footer {
   min-height: 120px;
@@ -341,11 +354,12 @@ nav li {
   margin-top: -120px;
   padding-top: 35px;
   width: 1200px;
-  padding-bottom: 36px;
+  padding-bottom: 30px;
   background: rgba(249, 251, 246, 0.8); 
   box-shadow: none;    
 }
 .page-footer .container {
+    min-height: 120px;
   padding-top: 35px;
   width: 1200px;
   background-color: rgb(254,254,254);     
@@ -355,16 +369,17 @@ nav li {
   float: left;
   margin: 0;
   padding: 0;
-  margin-right: 252px;
+  margin-right: 249px;
   padding-top: 13px;
   margin-left: 133px;
   min-width: 140px;
 }
 .main-footer-hashtag span,
 .page-footer-hashtag span{
+    
     font-size: 21px;
-    line-height: 26px;
-    font-weight: 700
+    line-height: 29px;
+    font-weight: 600;
 }
 .main-footer-social, 
 .page-footer-social {
@@ -378,7 +393,7 @@ nav li {
   position: relative;
     float: right;
     margin-right: 102px;
-  margin-top: 5px;
+  
   min-width:  110px;
   min-height: 43px;
 }
@@ -386,6 +401,7 @@ nav li {
     display: inline-block;
     width: 115px;
     height: 39px;
+    margin-top: 10px;
     font-size: 0;
     text-decoration: none;
     color: #000000;
@@ -442,6 +458,8 @@ nav li {
   padding-top: 25px;
   padding-bottom: 21px;
   background: #778899 url("../img/rock-blur.jpg") no-repeat;
+  box-shadow: -4px 0 2px -2px rgba(0,0,0,0.2),
+               4px 0 2px -2px rgba(0,0,0,0.2);
 }
 .filters-checkbox ul{
     margin: 0;
@@ -626,6 +644,8 @@ nav li {
     color: #000000;
     background: rgb(255, 255, 255); 
 }
+ 
+
 .result-header {
   min-height: 86px;
   padding-top: 30px;
@@ -723,6 +743,7 @@ nav li {
   background-color: yellow;
   border-bottom: 1px solid rgb(249,249,249);
   background-color:   rgb(254,254,254);
+    box-shadow: none;
 }
 .result-find h2{
     margin: 0;
@@ -813,7 +834,7 @@ nav li {
     background: #ffffff;
     left: 50%;
     top:50%;
-    transform: translate(0px,924px);
+    transform: translate(0px, 943px);
     margin-top: -240px;
     margin-left: -284px;
     color: #000000;
@@ -822,23 +843,23 @@ nav li {
     position: relative;
     display: block;
     width: 100%;
-    padding-top: 30px;
-    padding-bottom: 31px;
+    padding-top: 33px;
+    padding-bottom: 28px;
     font-family: inherit;
     text-transform: inherit;
     font-size: 21px;
     line-height: 26px;
-    font-weight: 600;
+    font-weight: 500;
+    border: none;
     background: #766357;
     color: #ffffff;
     text-align: center;
-    font-weight: 600;
     z-index: 1;
 }
 .modal-content-form {
     padding-left: 55px;
     padding-top: 55px;
-    padding-bottom: 53px;
+    padding-bottom: 56px;
     box-shadow: 0 5px 50px 1px grey;
 }
 .modal-content-form label{
@@ -875,11 +896,11 @@ nav li {
 }
 .arrive-field input {
     margin-left: 22px;
-    margin-bottom: 29px;
+    margin-bottom: 27px;
 }
 .depart-field input {
     margin-left: 18px;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
 }
 .people-count-field input {
     position: relative;
@@ -898,10 +919,10 @@ nav li {
     margin-left: 38px;
 }
 .count-child {
-    margin-left: 54px;
+    margin-left: 49px;
 }
 .count-child input {
-   margin-left: 17px; 
+   margin-left: 22px; 
 }
 .calendar {
     width: 23px;
@@ -919,7 +940,7 @@ nav li {
 .calendar-departure {
     position: absolute;
     right: 60px;
-    top: 220px;
+    top: 216px;
 }
 .calendar-departure:hover,
 .calendar-arrive:hover {
@@ -944,25 +965,25 @@ nav li {
 }
 .count-adult  .icon-minus {
     position: absolute;
-    top: 295px;
+    top: 288px;
     left: 180px;
     z-index: 1;
 }
 .count-adult  .icon-plus {
     position: absolute;
-    top: 295px;
-    left: 260px;
+    top: 288px;
+    left: 257px;
 }
 .count-child .icon-minus {
     position: absolute;
-    top: 295px;
-    left: 410px;
+    top: 288px;
+    left: 412px;
     z-index: 1;
 }
 .count-child .icon-plus {
     position: absolute;
-    top: 295px;
-    left: 491px;
+    top: 288px;
+    left: 489px;
 }
 .icon-minus:hover {
     background-position: -10px -5px;
@@ -980,8 +1001,9 @@ nav li {
     display: block;
     width: 458px;
     background: red;
-    margin-top: 54px;
-    padding: 18px;
+    margin-top: 52px;
+    padding-top: 18px;
+    padding-bottom: 14px;
     font-size: 21px;
     line-height: 26px;
     font-weight: 600;
