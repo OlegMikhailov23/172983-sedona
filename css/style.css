@@ -455,8 +455,7 @@ nav li {
     background-position: -177px 0px;
 }
 .filters {
-  padding-top: 25px;
-  padding-bottom: 21px;
+  padding-top: 28px;
   background: #778899 url("../img/rock-blur.jpg") no-repeat;
   box-shadow: -4px 0 2px -2px rgba(0,0,0,0.2),
                4px 0 2px -2px rgba(0,0,0,0.2);
@@ -473,14 +472,15 @@ nav li {
 .filters-checkbox {
   float: left;
   width: 150px;
-  margin-right: 103px;
+  margin-right: 96px;
 }
 .filters-checkbox:first-child {
-  margin-left: 72px;
+  margin-left: 66px;
 }
 .filters-checkbox legend {
     margin: 0;
     padding: 0;
+    margin-bottom: 18px;
     font-size: 16px;
     line-height: 21px;
     font-weight: 700;
@@ -491,7 +491,7 @@ nav li {
     color: #ffffff;
 }
 .filters-checkbox li {
-    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .filters-checkbox input[type="checkbox"] {
     display: none;
@@ -548,7 +548,7 @@ nav li {
 .price-controls {
     box-sizing: content-box;
     position: relative;
-    height: 36px;
+    height: 33px;
     margin-bottom: 20px;
     border: 2px solid #ffffff;
     border-radius: 2px;
