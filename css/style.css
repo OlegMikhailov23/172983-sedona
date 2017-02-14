@@ -444,6 +444,10 @@ nav li {
     font-weight: 600;
     text-transform: uppercase;
     line-height: 38px;
+    z-index: 1;
+}
+.people-count-field {
+    position: relative;
 }
 .count-adult input {
     margin-left: 38px;
@@ -493,27 +497,29 @@ nav li {
 .icon-plus {
     background-position: -167px -9px;
 }
-.count-adult  .icon-minus {
+.people-count-field button:nth-child(2) {
     position: absolute;
-    top: 288px;
-    left: 180px;
-    z-index: 1;
+    top: 14px;
+    left: 124px;
+    z-index: 2;
 }
-.count-adult  .icon-plus {
+.people-count-field button:nth-child(3) { 
     position: absolute;
-    top: 288px;
-    left: 257px;
+    top: 14px;
+    left: 199px;
+    z-index: 2;
 }
-.count-child .icon-minus {
+.people-count-field button:nth-child(5) {
     position: absolute;
-    top: 288px;
-    left: 412px;
-    z-index: 1;
+    top: 14px;
+    left: 357px;
+    z-index: 2;
 }
-.count-child .icon-plus {
+.people-count-field button:nth-child(6) {
     position: absolute;
-    top: 288px;
-    left: 489px;
+    top: 14px;
+    left: 432px;
+    z-index: 2;
 }
 .icon-minus:hover {
     background-position: -10px -5px;
