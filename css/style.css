@@ -413,6 +413,7 @@ nav li {
 .arrive-field input::-moz-placeholder, 
 .depart-field input::-moz-placeholder {
     color: #000000;
+    opacity: 1;
 }
 .arrive-field input {
     margin-left: 22px;
