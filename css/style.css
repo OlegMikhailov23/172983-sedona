@@ -134,7 +134,7 @@ nav li {
 
 /*--Контент index--*/
 .index-logo {
-    background-image: url("../img/intro-bg.jpg");
+    background: #4682B4 url("../img/intro-bg.jpg") no-repeat;
     min-height: 508px;
 }
 .index-logo-text {
@@ -180,13 +180,11 @@ nav li {
   width: 1200px;
   min-height: 256px;
   margin: 0 auto;
-  background-color: darksalmon;
 }
 .poster2 {
   width: 1200px;
   min-height: 256px;
   margin: 0 auto;
-  background-color: darksalmon;  
 }
 .poster-pic {
     height: 256px;
@@ -334,7 +332,7 @@ nav li {
     margin: 0;
     padding: 0;
     padding-top: 28px;
-    padding-bottom: 130px;
+    padding-bottom: 133px;
     line-height: 24px;
     text-align: center;
     
@@ -343,7 +341,7 @@ nav li {
   margin-left: auto;
   margin-right: auto;
   height: 593px;
-  background: url("../img/map2.png");
+  background: #EED5B7 url("../img/map2.png") no-repeat;
 }
 
 /*--Модальное окно--*/
@@ -354,7 +352,7 @@ nav li {
     background: #ffffff;
     left: 50%;
     top:50%;
-    transform: translate(0px, 943px);
+    transform: translate(0px, 941px);
     margin-top: -240px;
     margin-left: -284px;
     color: #000000;
@@ -396,7 +394,7 @@ nav li {
 .arrive-field input, 
 .depart-field input {
     position: relative;
-    padding-left: 12px;
+    padding-left: 10px;
     padding-right: 40px;
     font-family: inherit;
     font-size: 14px;
@@ -762,19 +760,23 @@ nav li {
     margin: 0;
     padding: 0;
     padding-left: 73px;
-    padding-right: 45px;
+    padding-right: 43px;
+    vertical-align: top;
 }
 .result-header p {
     display: inline-block;
     margin: 0;
     padding: 0;
-    padding-right: 34px;
+    padding-right: 36px;
+    padding-top: 6px;
     font-size: 12px;
-    line-height: 18px
+    line-height: 18px;
+    vertical-align: top;
 }
 .result-header-sort-list {
   display: inline-block;
   width: auto;
+  vertical-align: top;  
 }
 .result-header ul {
     margin: 0;
@@ -786,6 +788,8 @@ nav li {
   display: inline-block;
   padding-right: 33px;
   width: auto;
+  padding-top: 6px;    
+  vertical-align: top;  
 }
 .result-header-sort-list a:not(.price-current){
     text-decoration: none;
@@ -876,6 +880,7 @@ nav li {
 .info-title-text, 
 .info-subtitle-text {
   display: inline-block;
+  vertical-align: top;
 }
 .info-subtitle-text {
     margin: 0;
@@ -893,6 +898,7 @@ nav li {
     text-decoration: none;
     color: #ffffff;
     font-weight: 700;
+    vertical-align: top;
     text-align: center;
 }
 .details {
@@ -931,6 +937,7 @@ nav li {
     color: #666666;
     line-height: 20px;
     background: rgb(242, 242, 242);
+    vertical-align: top;
 }
 .result-find-raiting {
   margin-right: 70px;
@@ -955,7 +962,7 @@ nav li {
   margin-top: -120px;
   padding-top: 35px;
   width: 1200px;
-  padding-bottom: 30px;
+  padding-bottom: 33px;
   background: rgba(249, 251, 246, 0.8); 
   box-shadow: none;    
 }
@@ -971,7 +978,7 @@ nav li {
   margin: 0;
   padding: 0;
   margin-right: 249px;
-  padding-top: 13px;
+  padding-top: 10px;
   margin-left: 133px;
   min-width: 140px;
 }
@@ -986,7 +993,7 @@ nav li {
 .page-footer-social {
   float: left;
   min-width: 150px;
-  min-height: 55px;
+  padding-top: ;
 }
 
 .main-footer-copyright, 
@@ -994,19 +1001,20 @@ nav li {
   position: relative;
     float: right;
     margin-right: 102px;
-  
   min-width:  110px;
   min-height: 43px;
+    vertical-align: top;
 }
 .copyright-btn {
     display: inline-block;
     width: 115px;
     height: 39px;
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 0;
     text-decoration: none;
     color: #000000;
     background: url("../img/copyright.png") no-repeat;
+    vertical-align: top;
 }
 .copyright-btn::before {
     position: relative;
@@ -1030,6 +1038,7 @@ nav li {
     margin: 0 2px;
     text-decoration: none;
     background: rgb(129, 179, 210) url("../img/social-sprite.png") no-repeat center;
+    vertical-align: top;
 }
 .social-btn-tv { 
     background-position: -80px 0px;
