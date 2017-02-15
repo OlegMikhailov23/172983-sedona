@@ -349,7 +349,6 @@ nav li {
     position: absolute;
     width: 568px;
     min-height: 481px;
-    background: #ffffff;
     left: 50%;
     top:50%;
     transform: translate(0px, 941px);
@@ -375,6 +374,7 @@ nav li {
     z-index: 1;
 }
 .modal-content-form {
+    background: #ffffff;
     padding-left: 55px;
     padding-top: 55px;
     padding-bottom: 56px;
@@ -547,6 +547,10 @@ nav li {
     color: #ffffff;
     text-transform: inherit;
     background: #81b3d2;
+}
+.modal-content-form-close {
+    display: none;
+    width: 87px;
 }
 .modal-content-form .search-btn:hover {
     background: #669ec0;
