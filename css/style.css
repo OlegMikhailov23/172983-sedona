@@ -838,6 +838,9 @@ nav li {
     background-position: -134px -10px;
     margin-bottom: 2px;
 }
+.active {
+    background-position: -72px -10px;
+}
 .arrow-down:hover {
     background-position: -10px -10px;
 }
