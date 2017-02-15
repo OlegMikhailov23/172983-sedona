@@ -109,7 +109,7 @@ nav ul {
 .logo {
     position: absolute;
     top:0;
-    right:530px;
+    right:532px;
     z-index: 1;
 }
 nav a:hover {
@@ -467,12 +467,12 @@ nav li {
 }
 .calendar-arrive {
     position: absolute;
-    right: 60px;
+    right: 62px;
     top: 150px;
 }
 .calendar-departure {
     position: absolute;
-    right: 60px;
+    right: 62px;
     top: 216px;
 }
 .calendar-departure:hover,
@@ -846,7 +846,7 @@ nav li {
 }
 .result-find {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 29px;
   background-color: yellow;
   border-bottom: 1px solid rgb(249,249,249);
   background-color:   rgb(254,254,254);
@@ -960,14 +960,12 @@ nav li {
   position: relative;
   z-index: 1;
   margin-top: -120px;
-  padding-top: 38px;
-  width: 1200px;
-  padding-bottom: 34px;
   background: rgba(249, 251, 246, 0.8); 
   box-shadow: none;    
 }
-.page-footer .container {
-    min-height: 120px;
+.page-footer .container, 
+.main-footer .container {
+  min-height: 120px;
   padding-top: 35px;
   width: 1200px;
   background-color: rgb(254,254,254);     
@@ -978,13 +976,13 @@ nav li {
   margin: 0;
   padding: 0;
   margin-right: 249px;
-  padding-top: 7px;
-  margin-left: 133px;
+  padding-top: 10px;
+  margin-left: 132px;
   min-width: 140px;
 }
 .main-footer-hashtag span,
 .page-footer-hashtag span{
-    
+    color: #000000;
     font-size: 21px;
     line-height: 29px;
     font-weight: 600;
@@ -1018,8 +1016,9 @@ nav li {
 .copyright-btn::before {
     position: relative;
     left:-80px;
-    top: 5px;
+    top: 7px;
     content: "website by";
+    color: #000000;
     font-size: 14px;
     line-height: 26px;
 }
@@ -1040,13 +1039,13 @@ nav li {
     vertical-align: top;
 }
 .social-btn-tv { 
-    background-position: -80px 0px;
+    background-position: -80px 2px;
 }
 .social-btn-fb {
-    background-position: 3px -3px;
+    background-position: 3px -2px;
 }
 .social-btn-yt {
-    background-position: -227px 0px;
+    background-position: -227px 2px;
 }
 .social-btn:hover {
     background-color: rgb(102, 158, 192);
