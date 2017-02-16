@@ -348,7 +348,6 @@ nav li {
 .modal-content {
     position: absolute;
     width: 568px;
-    min-height: 481px;
     left: 50%;
     top:50%;
     transform: translate(0px, 941px);
