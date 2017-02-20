@@ -1,0 +1,1 @@
+document;var close=document.querySelector(".modal-content-title-btn"),popup=document.querySelector(".modal-content-form");close.addEventListener("click",function(a){a.preventDefault(),popup.classList.toggle("modal-content-form-close")});
